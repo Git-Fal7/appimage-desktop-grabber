@@ -1,7 +1,7 @@
 # appimage-desktop-grabber
 a little handy tool to grab .desktop files in .appimage files
 
-#using it
+# using it
 first you have to build the rust bin. which is used to replace lines.
 
 ``cargo build --release``
