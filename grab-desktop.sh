@@ -9,7 +9,10 @@ echo "creating a new file"
 ogDIRNAME=`pwd`
 mkdir /tmp/appimagedesktop/
 cd /tmp/appimagedesktop/
-DESKTOPFILENAME=`$1 --appimage-extract | grep ".desktop"`
+outpu=`$1 --appimage-extract`
+echo "done extracting"
+cd /tmp/appimagedesktop/squashfs-root
+DESKTOPFILENAME=squashfs-root/`ls -a | grep ".desktop"`
 NAMEEXEC=`cat ${DESKTOPFILENAME} | grep "Exec=" | cut -b 6- | cut -d' ' -f 1`
 varEXEC=`echo ${NAMEEXEC} | cut -d' ' -f 1`
 cd ${ogDIRNAME}
