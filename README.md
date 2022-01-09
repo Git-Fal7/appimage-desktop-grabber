@@ -15,3 +15,6 @@ then you execute the bash file
 ``./grab-desktop.sh (your appimage location)``
 
 and it should put the .desktop file onto your ~/.local/share/application. redirecting all executable to the appimage location.
+
+# rust version
+i made a branch that has the [rust version](https://github.com/Git-Fal7/appimage-desktop-grabber/tree/full-rust) to make it just one binary.
