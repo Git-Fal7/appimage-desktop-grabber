@@ -1,5 +1,3 @@
-extern crate home;
-
 use std::env;
 use std::fs;
 use std::fs::File;
@@ -36,7 +34,8 @@ fn main() {
 	let appimagename = &name[0].chars().rev().collect::<String>();
 	
 	//Get the home directory of the user
-	let homedir = format!("{}", home::home_dir().unwrap().display()); 
+	#[allow(depercated)]
+	let homedir = format!("{}", env::home_dir().unwrap().display()); 
 
 	//Create directories both for applications and pixmaps
 	fs::create_dir_all(format!("{}/.local/share/applications", homedir)).ok();
