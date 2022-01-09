@@ -69,7 +69,7 @@ fn main() {
 			let f = BufReader::new(f);
 			
 			//Where the .desktop will be
-			let path = format!("{}/.local/share/apps/{}.desktop", homedir, appimagename);
+			let path = format!("{}/.local/share/applications/{}.desktop", homedir, appimagename);
 
 			//Create .desktop file
 			let mut output = File::create(path).expect("failed to create file");
