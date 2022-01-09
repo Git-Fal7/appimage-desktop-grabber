@@ -2,7 +2,7 @@
 a little handy tool to grab .desktop files in .appimage files
 
 # using it
-first you have to build the rust bin. which is used to replace lines.
+first you have to build the rust bin. which is used to replace lines (its just used for replacing output of a file, you can replace anything really).
 
 ``cargo build --release``
 
