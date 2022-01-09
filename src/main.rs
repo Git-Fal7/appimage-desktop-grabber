@@ -8,6 +8,7 @@ use std::process::exit;
 use std::io::{BufRead, BufReader};
 use std::path::Path;
 use std::io::Write;
+
 fn main() {
 	//Collects the arguments that will be passed.
 	let args: Vec<String> = env::args().collect();
