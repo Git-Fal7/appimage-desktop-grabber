@@ -41,4 +41,4 @@ real	0m1.762s
 user	0m1.555s
 sys	0m0.179s
 ```
-``/tmp`` can be useful to use since almost all appimages are small that you can extract it there. and thats where the rust version will do its work.
+``/tmp`` can be useful to use since almost all appimages are small that you can extract it there. and thats where the rust version will be more viable.
