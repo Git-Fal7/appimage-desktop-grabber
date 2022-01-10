@@ -34,7 +34,7 @@ fn main() {
 	let appimagename = &name[0].chars().rev().collect::<String>();
 	
 	//Get the home directory of the user
-	#[allow(depercated)]
+	#[allow(deprecated)]
 	let homedir = format!("{}", env::home_dir().unwrap().display()); 
 
 	//Create directories both for applications and pixmaps
