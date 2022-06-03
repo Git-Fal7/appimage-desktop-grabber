@@ -26,7 +26,7 @@ real	0m4.882s
 user	0m1.536s
 sys	0m0.405s
 ```
-As you see, shell scripts are apparently faster, this is expected, however, when you put both of them in ``/tmp``, it becomes appearant that shell scripts are winning due to using of ``/tmp`` to extract the appimages.
+As you see, shell scripts are apparently faster, this is expected, however, when you put both of them in ``/tmp``, the rust version is faster than the script one.
 ```
 Launching from /tmp
 BASH
